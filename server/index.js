@@ -28,7 +28,7 @@ app.use(session({
     resave: true,
     saveUninitialized: true,
     cookie: { 
-        maxAge: 360000,
+        
         sameSite: 'none',  
         secure:true
 }
