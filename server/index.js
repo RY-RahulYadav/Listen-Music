@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json())
 ConnectToMongodb();
 app.use(cors({
-    origin:  "https://listen-music.vercel.app" , 
+    origin:  ["https://listen-music.vercel.app", '*'] , 
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // Allow cookies and credentials
 
