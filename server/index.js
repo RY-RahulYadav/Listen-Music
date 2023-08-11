@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 // session and passport initialize 
 app.use(session({
     
-    secret: 'music player',
+    secret: 'keyboard cat',
     resave: true,
     saveUninitialized: true,
     cookie: { 
