@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(session({
     
     secret: 'keyboard cat',
-    resave: true,
+    resave: false,
     saveUninitialized: true,
     cookie: { 
         
@@ -34,7 +34,7 @@ app.use(session({
 }
 }))
 
-// app.use(cookieParser('keyboard cat'))
+app.use(cookieParser('keyboard cat'))
 app.use(passport.initialize());
 app.use(passport.session());
 
