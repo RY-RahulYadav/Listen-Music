@@ -27,6 +27,7 @@ app.use(session({
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: true,
+    httpOnly: true,
     cookie: { 
         domain: '.vercel.app',sameSite: 'none',    secure:true
 }
