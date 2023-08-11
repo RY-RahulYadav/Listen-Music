@@ -1,19 +1,20 @@
 {
-  "version": 2,
-  "name": "musicServer",
-  "builds": [
-      { "src": "*.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-      {
-          "src": "/(.*)",
-          "dest": "/",
-          "headers": [
-              { "key": "Access-Control-Allow-Credentials", "value": "true" },
-              { "key": "Access-Control-Allow-Origin", "value": "https://listen-music.vercel.app" },
-              { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS, PATCH, DELETE, POST, PUT" },
-              { "key": "Access-Control-Allow-Headers", "value": "X-CSRF-Token,Credentials, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" }
-          ]
-      }
-  ]
-}
+    "version": 2,
+    "name": "musicServer",
+    "builds": [
+        { "src": "*.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/",
+            "headers": {
+                "Access-Control-Allow-Credentials": "true",
+                "Access-Control-Allow-Origin": "https://listen-music.vercel.app",
+                "Access-Control-Allow-Methods": "GET, OPTIONS, PATCH, DELETE, POST, PUT",
+                "Access-Control-Allow-Headers": "X-CSRF-Token,Credentials, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
+            }
+        }
+    ]
+  }
+  
