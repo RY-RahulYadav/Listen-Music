@@ -1,0 +1,1430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+  
+    overflow-x: hidden;
+    overflow-anchor: none;
+    /* background: linear-gradient(155.8deg, rgb(0, 0, 0) 10.1%, rgb(13, 10, 53) 25%, rgb(0, 0, 0) 40.1%, rgb(28, 9, 56) 55%, rgb(0, 0, 0) 80.1%); */
+    background: linear-gradient(155.8deg, rgb(0, 0, 0) 1.1%, rgb(13, 10, 53) 15%, rgb(0, 0, 0) 40.1%, rgb(28, 9, 56) 55%, rgb(0, 0, 0) 80.1%);
+}
+
+
+html {
+    font-size: 1vw;
+}
+
+/* .marginBottomcontainer{
+  margin-bottom: 5rem;
+} */
+.customContainer {
+    display: flex;
+    padding: 1.1rem;
+
+
+}
+
+.imgtag img {
+    margin-left: 1rem;
+    width: 2.8rem;
+    height: 2.8rem;
+
+    border-radius: 50%;
+
+  
+}
+.searchdislay{
+    
+    width: 0;
+    height: 0;
+    
+}
+.customBox {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.licontainer {
+    display: flex;
+    list-style: none;
+
+
+
+}
+
+.licontainer li a {
+    color: rgb(189, 189, 189);
+    font-size: 1.02rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 1.8rem;
+
+}
+
+.customBtn button {
+    color: rgb(252, 247, 247);
+
+    margin: 0px 0.5rem;
+    
+
+
+}
+
+.heading {
+    width: 40rem;
+    height: 20rem;
+    position: relative;
+    top: 6rem;
+    right: 2rem;
+    left: 7.2rem;
+}
+
+.heading span {
+    margin-left: 0.3rem;
+    font-weight: 500;
+    font-size: 4.5rem;
+    color: rgb(213, 211, 211);
+
+}
+
+.heading p {
+    margin-left: 0.4rem;
+    width: 30rem;
+    font-size: 1rem;
+    color: rgb(15, 167, 228);
+    margin-bottom: 2rem;
+
+}
+
+.heading h1 {
+    color: rgb(74, 144, 172);
+
+
+
+    width: 30rem;
+    font-weight: 500;
+
+
+    font-size: 3.5rem;
+
+}
+
+
+.carousel-inner {
+    display: flex;
+    transition: all 5s;
+}
+
+.carousel-inner.slide-next {
+    transform: translateX(-100%);
+
+}
+
+.carousel-inner.slide-prev {
+    transform: translateX(0%);
+
+}
+
+
+
+.secondContainer {
+
+    display: flex;
+    width: 100vw;
+    margin-top: 1.8rem;
+    margin-bottom: 3.5rem;
+}
+
+.mycontainer3 {
+    position: relative;
+    left: 1rem;
+    right: 1rem;
+
+    width: 54vw;
+    
+    margin-top: 1rem;
+    margin-right: 0rem;
+}
+
+.myimgtag2 {
+    margin-right: 0rem;
+    width: 54vw;
+    height: 22rem;
+
+    border-radius: 5rem;
+
+}
+
+
+.mysearch {
+    background-color: transparent;
+    color: white;
+    padding: 0.9rem;
+    width: 30vw;
+    height: 1rem;
+    margin-right: 1.2rem;
+    border: rgb(173, 173, 173) 0.1rem solid;
+    border-radius: 3rem;
+    outline: none;
+
+}
+
+.mysearch::placeholder {
+    color: rgb(160, 160, 160);
+    text-align: center;
+    font-size: 0.95rem;
+
+}
+
+.cardcontainer {
+    width: 15rem;
+    height: 8rem;
+}
+
+.artistImg {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0.7rem 0.7rem;
+
+    border: rgb(117, 117, 117) solid 1.6px;
+    border-radius: 0.5rem;
+    margin: 8px;
+
+
+    text-align: center;
+    color: aliceblue;
+    width: 12rem;
+    height: 15.5rem;
+
+}
+
+.artistImg:hover {
+    background-color: rgba(157, 157, 157, 0.179);
+}
+
+.artistImg img {
+    align-self: center;
+    border-radius: 1rem;
+
+    width: 9.5rem;
+    height: 9.5rem;
+
+}
+
+.artistImg img:hover {
+    transform: scale(105%);
+}
+
+.cardText {
+    width: 10rem;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.scroll {
+
+    height: 20rem;
+    width: 93%;
+    margin: 1rem auto;
+    display: flex;
+    overflow-x: scroll;
+
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    margin-top: 2rem;
+    margin-left: 4rem;
+  
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.hr1 {
+    margin: 1rem 1rem;
+  
+    width: 80%;
+
+    color: aqua;
+}
+
+.footerContainer {
+    position: sticky;
+    top: 100vh;
+    bottom: 0;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    height: 7rem;
+}
+
+.footerContainer p a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.footerContainer img {
+    filter: invert(70.5%);
+
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+
+}
+
+.player:playing {
+    background-color: black;
+}
+
+.loginContainer {
+    display: flex;
+    color: white;
+    width: 8.5rem;
+  
+    align-items: center;
+    height: 2.2rem;
+    position: relative;
+  
+    right: 2rem;
+    padding: 0rem 1rem;
+
+
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.modalContainer {
+    z-index: 100;
+    position: absolute;
+    top: -66px;
+    left: -32px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 111vw;
+    height: 300vh;
+    filter: blur(2rem);
+
+}
+
+.bigSignup {
+    display: flex;
+
+
+}
+
+.bigSignup img {
+    width: 25rem;
+    height: 33rem;
+    opacity: 0.8;
+    border-radius: 2rem 0rem 0rem 2rem;
+}
+
+.OptionLogin {
+    position: relative;
+    top: 7rem;
+    left: 6rem;
+}
+
+.loginUserIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+   
+    margin: 0 0.5rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background-color: rgb(117, 117, 117);
+}
+
+.loginUserIcon img {
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+.user {
+    font-size: 1rem;
+    height: 1.5rem;
+}
+
+.mainPageResponsive {
+    display: none;
+}
+
+.LogoutBTn {
+
+    margin-top: 0.5rem;
+
+    background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) .4%, rgba(63, 76, 119, 1) 70.2%);
+    width: 6rem;
+    height: 2rem;
+    text-align: center;
+
+    z-index: 1300;
+
+    border-radius: 0.5rem;
+    position: relative;
+    right: 0.5rem;
+
+}
+
+
+.signUpText {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.Signucontainer {
+
+    z-index: 600;
+    width: 28rem;
+    height: 20rem;
+
+
+}
+
+.Signucontainer2 {
+   
+    box-sizing: border-box;
+    width: 28rem;
+    height: 25rem;
+
+}
+
+.loginBox {
+ 
+
+    z-index: 12000;
+    position: absolute;
+
+    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.479);
+
+    top: 10rem;
+    left: 25rem;
+    border-radius: 2rem;
+
+    backdrop-filter: blur(4rem);
+
+
+}
+
+
+.loginBox input {
+    margin: 0.4rem 3.8rem;
+    padding: 1rem;
+    width: 68%;
+    height: 3.5rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  
+    border-radius: 1rem;
+
+}
+
+
+.loginBox hr {
+    position: relative;
+    bottom: 1rem;
+    margin: auto;
+    display: block;
+    width: 68%;
+
+
+    height: 5px;
+
+
+}
+
+.submitSet button {
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+
+    top: 1.5rem;
+    left: 8.5rem;
+    width: 40%;
+    height: 2rem;
+    background-color: transparent;
+    border: rgb(250, 170, 170) solid 2px;
+    outline: none;
+    border-radius: 1rem;
+
+}
+
+.submitSet button:hover {
+    background-color: #777777;
+}
+
+.submitSet button:active {
+    background-color: #050505;
+}
+
+.loginBox input::placeholder {
+    color: white;
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+
+.crossIcon {
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    left: 51rem;
+    color: white;
+}
+
+.playlist {
+    z-index: 500;
+    position: fixed;
+    top: 1rem;
+    left: 40rem;
+    width: 32rem;
+
+    border-radius: 1rem;
+    height: 10rem;
+
+    background: rgb(49, 56, 67);
+    background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
+    padding: 2rem;
+
+    filter: none;
+    animation: slide-in-top 1s;
+}
+
+
+.playModalBtn {
+    width: 7rem;
+    height: 2rem;
+    color: white;
+    border-radius: 1rem;
+    border: rgb(128, 128, 128) solid 2px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    background-color: transparent;
+    cursor: pointer;
+}
+.playModalBtn {
+    margin-right: 1rem;
+}
+
+.playbtnBox {
+    display: flex;
+    position: relative;
+    top: 2rem;
+    left: 13rem;
+   
+}
+
+.playModalBtn:hover {
+    background: rgb(117, 117, 117);
+}
+
+.playlistlabel {
+    outline: none;
+    border: none;
+    background: transparent;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-left: 1.5rem;
+    height: 2rem;
+    width: 18rem;
+    border: rgb(117, 117, 117) solid 1px;
+}
+
+.playlistmodal {
+
+   
+
+    z-index: 500;
+    position: fixed;
+    top: 8rem;
+    left: 38rem;
+    width: 28rem;
+
+    border-radius: 1rem;
+    height: 35rem;
+
+
+
+    background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
+    padding: 2.5rem;
+    
+    animation: slide-in-top 1s;
+}
+
+
+
+.playnamebox {
+    
+    margin:  auto;
+    color: #000;
+    
+    width: 20rem;
+    height: 4rem;
+
+    border-radius: 1rem;
+
+
+    margin: 0.5rem;
+    display: flex;
+
+
+
+}
+.playlistcontain{
+    overflow-y: scroll;
+    height: 30rem;
+}
+.playlistcontain::-webkit-scrollbar {
+    display: none;
+}
+
+.playnamebox p {
+    
+    margin-left: 1rem;
+    color: #dddbdb;
+    font-weight: 400;
+    
+    font-size: 1.2rem;
+    width: 20rem;
+
+    margin-right: 6rem;
+    cursor: pointer;
+
+
+
+}
+.playnamebox p span:hover{
+text-decoration: underline;
+color: #87a6dc;
+}
+
+.playnamebox i {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.playlistBox {
+width: 22rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playlistBox p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.playlistBox i {
+
+    position: relative;
+    bottom: 0.7rem;
+    
+
+}
+
+.playlistAddbtn {
+    color: #000;
+    margin-top: 0.5rem;
+    margin-left: 4rem;
+    width: 3rem;
+    height: 2rem;
+    border-radius: 1rem;
+    outline: none;
+    border: rgb(243, 183, 183) solid 1px;
+    background-color: transparent;
+
+}
+
+.functionBox {
+
+    color: #000;
+    background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) .4%, rgba(63, 76, 119, 1) 70.2%);
+    width: 9rem;
+    height: 6rem;
+    bottom: 5.8rem;
+    position: absolute;
+    right: 1.4rem;
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1000;
+
+    border-radius: 1rem;
+}
+
+.responsiveNav2 {
+    display: none;
+}
+
+.functionBox button {
+
+    width: 8.95rem;
+    height: 2.95rem;
+    border: none;
+    outline: none;
+    position: relative;
+
+    border-radius: 1rem 1rem 0rem 0rem;
+
+    background-color: transparent;
+
+}
+
+.functionBox hr {
+    position: relative;
+
+    right: 0.1rem;
+    margin: 0.2rem 0rem;
+
+    align-self: center;
+    color: #dddbdb;
+    width: 9rem;
+
+}
+
+.functionBox button:hover {
+    background: rgb(137, 129, 206);
+    color: #000;
+}
+
+.largescreenHide {
+    display: none;
+}
+
+.Ablumflex {
+    display: flex;
+}
+.closemark {
+    position: absolute;
+    top: 1.8rem;
+    left: 29rem;
+}
+
+.hideplayer {
+    display: none;
+}
+
+.trd {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.displayNone {
+    margin-right: 11rem;
+    visibility: hidden;
+}
+
+.iconInvisible {
+    visibility: hidden;
+}
+
+.flexBOx1 {
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.CustomizeNav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background-color: black;
+    
+    z-index: 222;
+}
+.CustomizeNav .loginCn{
+display: flex;
+margin-left: 3rem;
+margin-right: 0rem;
+width: 80vw;
+margin-top: 3rem;
+font-size: 4rem;
+font-weight: 400;
+align-items: center;
+}
+.loginCn .imgtag img{
+  width: 9.8rem;
+  height: 9.8rem;
+  margin-right:3.5rem;
+
+}
+.loginCn a{
+  
+     font-size: 15.9px;
+     font-weight: bold;
+}
+.loginCn2{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.NavLicontainer{
+    position: fixed;
+    margin: 9rem;
+    margin-left: 14rem;
+    width: 60rem;
+    height: 70rem;
+    font-size: 16px;
+    padding-top: 5rem;
+}
+.NavLicontainer li{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 12rem;
+}
+.NavLicontainer li a{
+    font-size: 19px;
+    outline: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navImg{
+    position: absolute;
+    top: 90vh;
+  
+    display: flex;
+    width: 80vw;
+    filter: invert();
+    margin-left: 10rem;
+   
+    align-content: center;
+
+}
+.navImg img{
+  
+    width: 7rem;
+    height: 7rem;
+
+    margin-right: 10rem;
+}
+
+
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .licontainer li a {
+        font-size: 1.5rem;
+    }
+
+    .imgtag img {
+        margin: 0.5rem;
+    }
+.mysearch{
+    height: 1.8rem;
+}
+.mysearch::placeholder{
+    font-size: 1.25rem;
+}
+.loginContainer{
+   width:12vw;
+}
+.loginContainer img{
+
+    width: 2.8rem;
+    height: 2.8rem;
+}
+.user {
+    font-size: 1.4rem;
+}
+
+}
+
+
+@media screen and (max-width: 500px) {
+    body {
+        background: linear-gradient(155.8deg, rgb(0, 0, 0) 0.1%, rgb(13, 10, 53) 15%, rgb(0, 0, 0) 40.1%, rgb(28, 9, 56) 55%, rgb(0, 0, 0) 80.1%);
+    }
+
+    .responsiveNav2 {
+        display: flex;
+    }
+
+    .licontainer {
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .licontainer li a {
+        margin-left: 1rem;
+        margin-right: 4rem;
+        font-size: 2.6rem;
+    }
+
+    .imgtag img {
+        margin: 1.5rem;
+        margin-left: 4.5rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .heading {
+        display: none;
+
+    }
+
+    .secondContainer {
+        margin-top: 0rem;
+        margin-bottom: 3rem;
+      
+    }
+
+    .secondContainer .mycontainer3 {
+
+        position: relative;
+
+        left: 0rem;
+
+
+        width: 100vw;
+
+        /* margin-right: 2rem; */
+        /* border-radius: 7rem; */
+    }
+
+    .myimgtag2 {
+        margin-right: 10rem;
+        width: 100vw;
+        border-radius: 0rem;
+        height: 70rem;
+
+        /* margin-bottom: 3rem; */
+    }
+
+    .responsiveNav {
+        display: none;
+    }
+
+  
+   
+
+    .customBtn {
+        margin-top: 1.5rem;
+        margin-right: 3rem;
+    }
+
+    .customBtn button {
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+.searchdislay{
+  
+    width: 100vw;
+    height: 15rem;
+
+}
+    .iconInvisible {
+
+        visibility: visible;
+    }
+
+    .fa-angle-left {
+        font-size: 3rem;
+        margin-top: 6rem;
+        margin-left: 5rem;
+    }
+
+    .mainPageResponsive {
+        margin: 4rem;
+        margin-left: 5rem;
+        display: block;
+        width: 90vw;
+        height: 6.5rem;
+        font-size: 3rem;
+    }
+.mainPageResponsive::placeholder{
+    font-size: 3rem;
+}
+    .scroll {
+        width: 90rem;
+        height: 49rem;
+        display: flex;
+        margin: 2rem;
+        margin-left: 4rem;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .cardcontainer {
+        width: 40rem;
+        height: 48rem;
+    }
+
+    .artistImg {
+        display: flex;
+        flex-direction: column;
+
+        padding: 1.2rem 1rem;
+
+        border: none;
+        border-radius: 0.5rem;
+        margin: 8px;
+margin-right: 0rem;
+
+        text-align: center;
+        color: aliceblue;
+        width: 34rem;
+        height: 45rem;
+
+    }
+
+    .artistImg:hover {
+        background-color: rgba(157, 157, 157, 0.179);
+    }
+
+    .artistImg img {
+        align-self: center;
+        border-radius: 2rem;
+
+        width: 30rem;
+        height: 30rem;
+
+    }
+
+
+
+    .cardText {
+        width: 28rem;
+        margin-top: 2.5rem;
+        margin-left: 1.5rem;
+        font-size: 3rem;
+    }
+
+    .hr1 {
+        width: 65vw;
+        margin-left: 2rem;
+    }
+    .Signucontainer ,
+    .Signucontainer2{
+        height: 100rem;
+        width: 74rem;
+    }
+    
+   .loginBox {
+        position: fixed;
+        top: 23rem;
+        left: 13rem;
+        height: 100rem;
+        width: 74rem;
+    }
+   
+    .loginBox img {
+        display: none;
+
+    }
+
+    .signUpText {
+        margin-top: 7rem;
+        font-size: 5rem;
+        margin-left: 5rem;
+        margin-bottom: 10rem;
+    }
+  
+   
+
+    .loginBox input {
+
+        width: 98%;
+        height: 10rem;
+        background-color: transparent;
+        outline: none;
+        border: none;
+
+        border-radius: 1rem;
+
+    }
+   .Signucontainer .loginBox hr {
+        position: relative;
+        left: 10rem;
+        bottom: 8rem;
+        margin-bottom: 58rem;
+        width: 55rem;
+        height: 7px;
+
+
+
+    }
+   .Signucontainer2 .loginBox hr {
+        position: relative;
+        left: 10rem;
+        bottom: 2rem;
+        margin-bottom: 70rem;
+        width: 55rem;
+        height: 7px;
+
+
+
+    }
+
+    .Signucontainer .submitSet button {
+        font-size: 2.5rem;
+        text-align: center;
+        position: relative;
+
+        top: 12rem;
+        left: 25rem;
+        margin-bottom: 5rem;
+        width: 35%;
+        height: 5rem;
+
+        border: rgb(250, 170, 170) solid 1px;
+        border-radius: 3rem;
+
+    }
+    .Signucontainer2 .submitSet button {
+        font-size: 2.5rem;
+        text-align: center;
+        position: relative;
+
+        top: 12rem;
+        left: 25rem;
+        margin-bottom: 5rem;
+        width: 35%;
+        height: 5rem;
+
+        border: rgb(250, 170, 170) solid 1px;
+        border-radius: 3rem;
+
+    }
+    .loginBox input{
+        width: 80%;
+        padding-left: 9rem;
+        font-size: 4rem;
+    }
+
+    .loginBox input::placeholder {
+padding-left: 0rem;
+padding-bottom: 0;
+        font-size: 3.2rem;
+
+    }
+
+    .crossIcon {
+        top: 4rem;
+        left: 66rem;
+        font-size: 2.5rem;
+    }
+
+    .OptionLogin {
+        top: 15rem;
+        left: 20rem;
+        font-size: 2.2rem;
+        width: 50rem;
+    }
+
+    .customBtn button {
+        border-radius: 1.9rem;
+        width: 13rem;
+        height: 4.5rem;
+        margin-left: 0.7rem;
+        font-size: 1.99rem;
+    }
+
+    .largescreenHide {
+        display: block;
+    }
+    .footerContainer{
+     margin-top: 4rem;
+        height: 10rem;
+        padding-left: 6rem;
+    }
+    .footerContainer p{
+
+        font-size: 2rem;
+    }
+  
+.customContainerInside{
+    margin-right: 6.8rem;
+    margin-top:3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3.5rem;
+}
+.customContainerflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customContainerInside img {
+    width: 11rem ;
+    height: 11rem;
+    margin-right: 4rem;
+}
+.customContainerInside h6{
+    /* margin-left: 10rem; */
+    font-size: 6rem;
+}
+.commonabcIcon2{
+    display: flex;
+    position: relative;
+    top: 0rem ;
+    right: 6rem;
+    font-size: 5rem;
+}
+
+ .playlist{
+   
+    top: 51rem;
+    left: 4rem;
+    right: 3rem;
+    width: 93vw;
+    height: 40rem;
+    font-size: 4.4rem;
+    padding: 4rem;
+    padding-top: 6rem;
+    padding-left: 4rem;
+}
+.playlistmodal{
+    top: 31rem;
+    left: 8rem;
+    right: 3rem;
+    width: 85vw;
+    height: 80rem;
+}
+
+.closemark{
+    left: 82rem;
+    top: 5rem;
+}
+.playbtnBox{
+    position: absolute;
+  left: 26rem;
+ 
+  top: 27rem;
+  
+}
+.playlistlabel{
+    width: 55vw;
+    height: 7rem;
+    border-radius: 4rem;
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+}
+.playlistlabel::placeholder{
+    font-size: 4rem;
+    margin: 0;
+}
+.playbtnBox button{
+   width: 28rem;
+   height: 6rem;
+   font-size: 3.5rem;
+   margin: 1.5rem;
+  }
+  .playlistBox{
+    margin-left: 5rem;
+    width: 68rem;
+    font-size: 7rem;
+  }
+  .playlistBox p{
+    margin-top: 2rem;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    
+  }
+  .playlistBox i {
+  font-size: 5rem;
+  }
+  .playnamebox{
+    margin-left: 7rem;
+    width: 62rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  .playnamebox p{
+    width: 62rem;
+    font-size: 4.3rem;
+   
+  }
+  .playlistcontain{
+    height: 60rem;
+  }
+  .playnamebox i{
+    font-size: 4rem;
+  }
+
+  .hideplaylist{
+    display: none;
+    
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    .playModalBtn {
+        border: rgb(117, 117, 117) solid 0.4px;
+    }
+
+    button {
+        border: rgb(117, 117, 117) solid 0.5px;
+    }
+
+    /* .artistImg {
+        border: rgb(117, 117, 117) solid 0.5px;
+    } */
+}
+
+@media screen  and (min-width:501px){
+     .artistImg {
+        border: rgb(117, 117, 117) solid 0.5px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .NavLicontainer{
+        margin-top: 10rem;
+    }
+    
+    .NavLicontainer li {
+        
+margin-bottom: 10rem;
+    }
+    .navImg {
+        margin-top: 10rem;
+    }
+    .navImg img {
+        margin-top: 0;
+width: 5rem;
+height: 5rem;
+    }
+    
+
+
+}
+
+
+@media screen and (max-height  :500px){
+    .CustomizeNav{
+        width: 75rem;
+    }
+    .loginCn2 .fa-x{
+        position: relative;
+        right: 4rem ;
+    }
+.NavLicontainer {
+    height: 20rem;
+
+}
+.NavLicontainer li{
+    margin: 2rem;
+    margin-bottom:  8rem;
+}
+.NavLicontainer li a{
+    font-size: 5rem;
+    margin: 0;
+
+
+}
+.navimg{
+    margin-top:  5rem;
+    margin-left: 4rem;
+    width: 5rem;
+ height: 5rem;
+
+}}
+@media screen and (max-height  :430px){
+    .NavLicontainer{
+        margin: 3rem 15rem;
+    }
+    .NavLicontainer li{
+        margin: 2rem;
+        margin-bottom:  4rem;
+    }
+   
+    .navImg  {
+        visibility: hidden;
+    }
+}
+
+
+
+@media screen and (min-height: 700px) {
+    .NavLicontainer{
+        margin: 10rem 16rem;
+    }
+    .loginCn2 a{
+        margin-top: 6rem;
+        font-size: 4rem;
+    }
+    .NavLicontainer li{
+        /* margin: 2rem; */
+        margin-bottom:  18.5rem;
+    }
+    .NavLicontainer li a{
+        font-size: 4.4rem;
+        margin: 0;
+    }
+    .navImg {
+        margin-top: 5rem;
+        margin-bottom :2rem;
+        margin-left: 12rem;
+
+    }
+    .navImg img {
+        margin-top: 0;
+width: 6rem;
+height: 6rem;
+    }
+    .navImg{
+        bottom: 10rem;
+    }
+
+
+}

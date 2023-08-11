@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+
+}
+
+html {
+    font-size: 1vw;
+}
+
+.trackBig {
+
+    height: 187vh;
+    z-index: -222;
+}
+
+.trackContainer {
+
+
+    display: flex;
+
+
+
+
+}
+
+.leftTr {
+    width: 30vw;
+
+}
+
+.leftTr img {
+    width: 18rem;
+    height: 18rem;
+    margin: 5rem 10rem;
+    border-radius: 5%;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.547);
+    display: flex;
+    flex-direction: column;
+}
+
+.trText {
+
+    color: rgba(255, 255, 255, 0.989);
+
+    font-weight: bold;
+
+}
+
+.rightTr {
+
+    position: relative;
+    height: 20rem;
+    top: 7rem;
+    left: 2rem;
+}
+
+.trartist {
+    display: flex;
+    color: rgba(255, 255, 255, 0.989);
+    font-size: 0.8rem;
+
+    font-weight: bold;
+}
+
+.bigTrackBtn {
+position: relative;
+right: 0.5rem;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.trackbtn button {
+    font-size: 1rem;
+    margin: 0.51rem;
+    color: white;
+
+    border: white solid 1px;
+    border-radius: 2.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex1 {
+    display: flex;
+}
+
+svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.trHr {
+    width: 85vw;
+    margin: auto;
+
+}
+
+.playShow {
+    margin: 1rem 3rem;
+    padding: 1rem;
+    display: flex;
+   
+    align-items: center;
+
+
+    border-radius: 1rem;
+    width: 51vw;
+    height: 4rem;
+    background-color: rgba(169, 169, 169, 0.137);
+    color: black;
+
+}
+
+.playShow p {
+    color: white;
+  
+}
+
+.playShow .mainImg {
+    margin: 0.5rem 1.5rem;
+
+    border-radius: 5px;
+    width: 3rem;
+    height: 3rem;
+}
+
+.playShow h6 {
+    margin-top: 0.5rem;
+
+    margin-bottom: 0;
+}
+
+.Trbox {
+    width: 55vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.playbtn {
+    filter: invert();
+
+    margin: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.relatedArtist {
+    display: flex;
+  
+    align-items: center;
+    width: 25rem;
+    height: 8rem;
+
+}
+
+.relatedArtist img {
+    margin-right: 2rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.bigRelatedArtistBox {
+
+    margin-top: 0rem;
+    margin-left: 7rem;
+    margin-right: 2rem;
+    width: 25rem;
+    height: 40rem;
+    border-radius: 2rem;
+    
+}
+
+.audioPlayer {
+    width: 200rem
+}
+
+.playerScroll {
+    padding: 0;
+    height: 0.11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.playerScroll input {
+
+
+    width: 100vw;
+    height: 0.1rem;
+
+
+}
+
+.playerbox {
+    margin: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 4.5rem;
+
+    background-image: linear-gradient(179deg, rgb(15, 1, 40) 9.2%, rgb(9, 18, 62) 103.9%, rgba(0, 0, 0, 1) 9.2%);
+
+
+}
+
+.playerImg img {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin: 0.5rem 2rem 0.5rem 0.5rem;
+}
+
+.playerImgBox {
+    display: flex;
+    margin: 1rem 1rem 1rem 10rem;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+}
+
+.playerPlay img {
+    margin: 0rem 1rem;
+    width: 2.8rem;
+    height: 2.8rem;
+
+}
+
+.playerEqual {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playerVoice {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+}
+
+.playerVoice input {
+
+
+    width: 8rem;
+    margin-top: 1rem;
+    height: 0.2rem;
+}
+
+.playTiteName {
+    margin-top: 0.6rem;
+    width: 15rem;
+
+}
+
+.playerSong {
+    font-size: .95rem;
+    font-weight: 400;
+}
+
+.playerArtist {
+    font-size: 0.8rem;
+}
+
+.playerScroll input[type="range"]::-webkit-slider-thumb {
+    opacity: 0;
+    visibility: hidden;
+   
+}
+
+.playerScroll input[type="range"]::-ms-thumb {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.playerScroll input[type="range"]::-moz-range-thumb {
+    appearance: none;
+}
+
+#volume::input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #555;
+    cursor: pointer;
+}
+
+.trackflex {
+    display: flex;
+}
+
+.MusicContainer1 {
+    width: 40rem;
+    position: relative;
+    right: 1rem;
+}
+
+.MusicContainer1 .artistsMap {
+    margin: 3rem;
+
+}
+
+.MusicContainer1 .albumItem {
+    height: 37rem;
+    width: 40rem;
+}
+
+.MusicContainer1 .RelatedAlbum {
+
+    margin: 1;
+    height: 8rem;
+    width: 35rem;
+}
+
+.MusicContainer1 .RelatedAlbum p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: 2rem;
+}
+
+.MusicContainer1 .RelatedAlbum img {
+
+    width: 7rem;
+    height: 7rem;
+
+}
+
+.MusicContainer1 .relatedArtist {
+    height: 7rem;
+}
+
+.MusicContainer2 {
+    position: absolute;
+    right: 2rem;
+
+    width: 56rem;
+
+}
+
+.MusicContainer3 {
+    margin-top: 5rem;
+}
+
+.MusicContainer3 .artistImg {
+    background-color: transparent;
+    border: none;
+
+}
+
+.MusicContainer3 .artistImg img {
+    border-radius: 50%;
+
+}
+
+.MusicContainer3 .artistImg p {
+    font-size: 1rem;
+}
+
+.LibaryIcon i {
+    width: 5rem;
+    height: 5rem;
+}
+
+.searchBar {
+    display: none;
+}
+.playerVoice img{
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0.5rem;
+   
+}
+.artNm{
+    font-size: 0.8rem;
+}
+
+@media screen and (min-height:900px){
+    .trackBig{
+        height: 120vh;
+    }
+}
+@media screen and (max-width: 700px) {
+    .playShow {
+
+        height: 5rem;
+        /* width: 50vw; */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .trackBig {
+        height: 150vh;
+    }
+
+    .playShow {
+/* margin-top: 3rem;
+margin-bottom: 1rem; */
+        position: relative;
+        left: 0rem;
+        height: 13rem;
+        width: 85vw;
+        border-radius: 2rem;
+        background-color: transparent;
+    }
+
+    .Trbox {
+        width: 75vw;
+    }
+
+    .playShow h6 {
+        margin-left: 2rem;
+        font-size: 3.3rem;
+    }
+
+    .playShow .mainImg {
+        margin-left: 4rem;
+        width: 9rem;
+        height: 9rem;
+        border-radius: 0;
+    }
+    .artNm{
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+    .trackboxnm{
+        font-size: 3.5rem;
+    }
+    .playShow i{
+      margin-right: 1rem;
+        font-size: 3.5rem;
+    }
+    .relatedArtist {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        width: 30rem;
+        height: 10rem;
+        margin: 2rem 0rem;
+    }
+
+    .relatedArtist img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .relatedArtist p {
+        font-size: 1.4rem;
+    }
+
+    .title {
+        font-size: 7rem;
+        margin-top: 6rem;
+        margin-left: 6rem;
+
+    }
+    .artistsMap{
+        margin-top: 10rem;
+    }
+    .artistsMap h3 {
+        font-size: 3.8rem;
+        margin-bottom: 4rem;
+    }
+
+    .MusicContainer2 {
+        position: relative;
+        margin-left: 2rem;
+
+    }
+
+    .flex1 {
+        margin-top: 10rem;
+        display: block;
+    }
+    .MusicContainer3 .cardcontainer {
+        width: 25rem;
+    }
+    .MusicContainer3  img{
+        width: 18rem;
+        height: 18rem;
+    }
+    .MusicContainer3 .artistImg p {
+        font-size: 1.7rem;
+    }
+.MusicContainer3 .scroll{
+    margin-left: -6rem;
+}
+    .trackContainer {
+        margin-top: 3rem;
+        height: 40rem;
+        margin-bottom: 15rem;
+    }
+
+    .trackContainer img {
+        margin-left: 8rem;
+        height: 40rem;
+        width: 36rem;
+    }
+
+    .trackContainer .rightTr {
+        position: relative;
+        top: 10rem;
+        left: 19rem;
+
+    }
+
+    .rightTr p {
+        font-size: 3.5rem;
+    }
+
+    .rightTr h1 {
+        font-size: 4.5rem;
+        
+    }
+
+    .trartist p {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .trackbtn button {
+        margin-top: 3rem;
+       /* left: 0rem; */
+        font-size: 2.5rem;
+        width: 18rem;
+        padding: 0.6rem;
+    }
+
+    .searchBar {
+        display: flex;
+        position: absolute;
+        top: 1.4rem;
+        left: 38rem;
+    }
+
+    .bigRelatedArtistBox {
+        margin-right: 8rem;
+    }
+
+    .artistsMap {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .Ablumflex {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 4.5rem;
+    }
+
+    .trackflex {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 4.5rem;
+    }
+    .playerScroll {
+        padding: 0;
+        height: 0rem;}
+
+     .playerbox {
+        height: 11.5rem;
+       
+    }
+    .playerSong {
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+    .playTiteName {
+        margin-top: -1rem;
+        width: 22rem;
+    }
+    .playerArtist {
+        font-size: 1.8rem;
+    }
+    .playerImg img {
+        width: 9.2rem;
+        height: 9.2rem;
+        margin: 0.5rem 2rem 0.5rem 1.5rem;
+    }
+    .playerImgBox { 
+        margin: 0;
+    }
+    .playerImgBox i{
+        font-size: 3rem;
+        margin-right: 2rem;
+    }
+    .timeval {
+        position: relative;
+        left: -5rem;
+        font-size: 2rem;
+        
+    }
+    .timeval div{
+        font-size: 1.5rem;
+        margin:1rem ;
+    }
+    .playerVoice img{
+        width: 3rem;
+        height: 3rem;
+        position: relative;
+        top: -0.5rem;
+    }
+    .playerVoice input {
+   width: 13rem;
+   margin-right: 2rem;
+    }
+    
+   
+    .specialIcon{
+        font-size: 7rem;
+    }
+    
+}
+@media screen and (max-width:355px){
+    .trackBig{
+        height: 100vh;
+    }
+}
