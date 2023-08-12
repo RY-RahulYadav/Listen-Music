@@ -74,16 +74,7 @@ export default function Artists(props) {
                             })}
                         </div>
                     </div>
-                    <div className="largescreenHide">
-                        <div className='title '>Top Related Album<hr className="hr1 responsiveNav " /></div>
-                        <div className="flex scroll">
-
-                            {relatedAlbum?.items.map((item, index) => {
-                                return (<Card key={index} itemData={item} name={item.name} imgUrl={item.images[0].url} />)
-
-                            })}
-                        </div>
-                    </div>
+                   
                 </div>
                 <div >
                     <h3 className=" responsiveNav" style={{ marginLeft: '3rem' }}>Top Artist Tracks</h3>

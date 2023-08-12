@@ -69,16 +69,7 @@ export default function Album(props) {
             })}</div>
         </div>
         
-        <div className="MusicContainer3 largescreenHide">
-            <div className='title'> Top Artists  </div>
-            <div className="flex scroll">
-
-                {relatedArtist?.artists.map((item) => {
-                    return (<Card itemData={item} name={item.name} imgUrl={item.images[0]?.url} />)
-
-                })}
-            </div>
-        </div>
+        
 
         <div >
             {Trackdata?.items.map((item, index) => {
