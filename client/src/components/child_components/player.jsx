@@ -43,6 +43,7 @@ export default function player(props) {
 
     if (playType == 'track') {
       setTrack(playItem)
+      setsongid(playItem?.id)
 
     }
     else {
@@ -164,6 +165,7 @@ export default function player(props) {
       return (!prev)
     })
     const element = document.getElementById(songid);
+    console.log(songid)
     if (isPlaying) {
     
       element.classList.remove("fa-pause")
