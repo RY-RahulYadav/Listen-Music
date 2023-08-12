@@ -70,14 +70,14 @@ function TrackBody(props) {
 
     <div className="rightTr " >
       <p className="trText">{props.type}</p>
-      <h1 className="trText"   >{props.TrackName.substring(0, 20)}</h1>
-      {props.type != 'artist' ? <div className="trartist">{props.dataArr.map((item, index) => { if (index < 4) { return (props.type != 'Playlist'&&<p>{item.name.substring(0,15)} . &nbsp;&nbsp;</p>) } })}</div> : <p > {props?.Follow} followers</p>}
-      <div className="bigTrackBtn">
+      <h1 className="trText"   >{props.TrackName.substring(0, 27)}</h1>
+      {props.type != 'artist' ? <div className="trartist">{props.dataArr.map((item, index) => { if (index < 2) { return (props.type != 'Playlist'&&<p>{item.name.substring(0,10)} . &nbsp;&nbsp;</p>) } })}</div> : <p > {props?.Follow} followers</p>}
+      <div className=" bigTrackBtn">
         <div className="flex">
-          <div onClick={() => { playhandle(); }} className="trackbtn"> <button type="button" className="btn btn-outline-secondary"> {state ? "Pause Now " : "Play Now"}</button></div>
+          <div onClick={() => { playhandle(); }} className="responsiveNav trackbtn"> <button type="button" className="btn btn-outline-secondary"> {state ? "Pause Now " : "Play Now"}</button></div>
           <div className="trackbtn">
 
-            <button onClick={() => { alert("download available for  premium user only  ") }} type="button" className="btn btn-outline-secondary" style={{ borderRadius: '3rem' }}>
+            <button onClick={() => { alert("download available for  premium user only  ") }} type="button" className="responsiveNav btn btn-outline-secondary" style={{ borderRadius: '3rem' }}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true" class="h-6 w-6 inline-flex"><path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
               Download
             </button>

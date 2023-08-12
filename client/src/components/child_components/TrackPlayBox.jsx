@@ -186,18 +186,18 @@ setuser(res)
 
     <div  >
       <div className=" playShow"   >
-        <p className ="trackboxnm " style={{ margin: '0.9rem 0rem' }} > {props.index + 1}.</p>
+        <p className ="trackboxnm " style={{ margin: '1rem 0rem' }} > {props.index + 1}.</p>
         <div > <img className="mainImg" src={props.img} alt=".." /> </div>
         <div className="Trbox" >
-          <div> <h6 onClick={() => { GOtrack(); props.playFunc(props.item, props.type, 0) }} style={{cursor:"pointer"}} >{props.TrackName?.substring(0,30)}.</h6>
-            <div className="flex" style={{cursor:"pointer"}}>{props.dataArr && props.dataArr.map((item, index) => { if (index <2) { return (<p className="artNm" >{item.name} . &nbsp;&nbsp;</p>) } })} </div></div>
-          <div style={{ marginTop: "2rem" }}>
-            <i onClick={() => { nextSong('previous') }} class="fa-solid fa-backward-step fa-xl" style={{ color: "#ffffff", margin: " 1.9rem" , cursor:"pointer" }}></i>
-            <i onClick={(e)=>{(playstatus(e))} } id={props.data?.id}  className={ state ? "fa-pause fa-solid  fa-xl trd " : "fa-play fa-solid  fa-xl trd"} style={{ color: "#ffffff", margin: " 0rem 0.9rem" , cursor:'pointer' }} value="false"></i>
+          <div> <h6 onClick={() => { GOtrack(); props.playFunc(props.item, props.type, 0) }} style={{cursor:"pointer"}} >{props.TrackName?.substring(0,23)}.</h6>
+            <div className="flex" style={{cursor:"pointer"}}>{props.dataArr && props.dataArr.map((item, index) => { if (index <2) { return (<p className="artNm" >{item.name.substring(0,12)} . &nbsp;&nbsp;</p>) } })} </div></div>
+          <div className="playshowbox" >
+            <i onClick={() => { nextSong('previous') }} className=" trackplayerbox1 fa-solid fa-backward-step fa-xl " style={{  }}></i>
+            <i onClick={(e)=>{(playstatus(e))} } id={props.data?.id}  className={ state ? "fa-pause trackplayerbox2 fa-solid  fa-xl trd " : "fa-play trackplayerbox2 fa-solid  fa-xl trd"} style={{  }} value="false"></i>
 
-            <i onClick={() => { nextSong('next')  }}  class="fa-sharp fa-solid fa-forward-step fa-xl" style={{ color: "#ffffff", margin: "1.9rem", cursor:'pointer' }}></i>
+           <i onClick={() => { nextSong('next')  }}  className=" fa-sharp trackplayerbox1 fa-solid fa-forward-step fa-xl" style={{  }}></i>
             
-              <i  className="fa-solid fa-ellipsis fa-rotate-90 fa-xl  " data-bs-toggle="dropdown" aria-expanded="false" style={{ color: "#f6f7f8", margin: "1.9rem",cursor:'pointer' }}></i>
+              <i  className=" trackplayerbox2 fa-solid fa-ellipsis fa-rotate-90 fa-xl  " data-bs-toggle="dropdown" aria-expanded="false" style={{  }}></i>
             <div className="dropdown">
               <ul className="dropdown-menu">
                 <li><a onClick={handleclick} className="dropdown-item" style={{cursor:"pointer"}}>Add to playlist</a></li>

@@ -59,16 +59,7 @@ export default function Track(props) {
                 )}
             })}</div>
         </div>
-        <div className={relatedArtist?.artists.length==0||relatedArtist?.artists[0].images.length==0?" displayNone largescreenHide": "MusicContainer3 largescreenHide"}>
-            <div className='title'> Top Artists  </div>
-            <div className="flex scroll">
-
-                {relatedArtist?.artists.map((item) => {
-                    return (<Card itemData={item} name={item.name} imgUrl={item.images[0]?.url} />)
-
-                })}
-            </div>
-        </div>
+       
        <div style={{marginTop:'1rem'}}>
        
        <TrackPlayBox playFunc={props.play} data ={data} type="track" item ={data} img={data.album.images[0].url}  index={0} TrackName={data.name} dataArr={data.artists} /></div>

@@ -87,7 +87,7 @@ export default function Artists(props) {
                 </div>
                 <div >
                     <h3 className=" responsiveNav" style={{ marginLeft: '3rem' }}>Top Artist Tracks</h3>
-                    {ArtistsTrackdata.tracks.map((item, index) => { return (<TrackPlayBox key={item.id} item={ArtistsTrackdata.tracks} data={item} playFunc={props?.play} type="artist" img={item.album?.images[0].url} index={index} TrackName={item.name} dataArr={item.artists} length={ArtistsTrackdata.tracks.length} />) })}
+                    {ArtistsTrackdata.tracks.map((item, index) => {if(index<10){ return (<TrackPlayBox key={item.id} item={ArtistsTrackdata.tracks} data={item} playFunc={props?.play} type="artist" img={item.album?.images[0].url} index={index} TrackName={item.name} dataArr={item.artists} length={ArtistsTrackdata.tracks.length} />)} })}
                 </div> </div>
             {/* <h1  >TOP TRACKS</h1> */}
 

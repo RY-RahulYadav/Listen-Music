@@ -234,8 +234,8 @@ export default function player(props) {
           <div className="playerImg"><img src={track?.album?.images[0].url} alt=".." /></div>
           <div className="playerEqual">
             <div className="playTiteName ">
-              <div className="playerSong">{track?.name?.substring(0,20)} </div>
-              <div className="playerArtist flex">{track?.album?.artists.map((item, index) => { if (index <= 1) { return <p>{item.name?.substring(0,25)}&nbsp;   </p> } })}</div>
+              <div className="playerSong">{track?.name?.substring(0,19)} </div>
+              <div className="playerArtist flex">{track?.album?.artists.map((item, index) => { if (index <= 1) { return <p>{item.name?.substring(0,10)}&nbsp;   </p> } })}</div>
             </div>
             <div className="playerImgBox flex">
               <div className=" playerBackward" onClick={() => { next_song('previous') }}><i  className="fa-solid fa-backward-step fa-xl" style={{ color: "#ffffff", margin: " 0.8rem", cursor:'pointer' }}></i></div>

@@ -82,8 +82,8 @@ export default function Album(props) {
 
         <div >
             {Trackdata?.items.map((item, index) => {
-              
-              return <TrackPlayBox key={item.id} playFunc={props.play} type="album"   item={Trackdata?.items} data={item} index={index} img={AlbumData?.images[0].url} TrackName={item.name} dataArr={item.artists} length={Trackdata?.items.length} />
+              if(index<15){
+              return <TrackPlayBox key={item.id} playFunc={props.play} type="album"   item={Trackdata?.items} data={item} index={index} img={AlbumData?.images[0].url} TrackName={item.name} dataArr={item.artists} length={Trackdata?.items.length} />}
             })}</div>
       </div>
 

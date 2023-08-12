@@ -385,6 +385,24 @@ svg {
 .artNm{
     font-size: 0.8rem;
 }
+.trackplayerbox1{
+    color: #ffffff;
+
+     margin: 2rem 0.9rem;
+     font-size: 1.6rem ;
+      cursor:pointer;
+}
+.trackplayerbox2{
+    color: #ffffff;
+
+    margin: 2rem 0.5rem;
+    font-size: 1.6rem ;
+     cursor:pointer;
+}
+
+.playshowbox{
+    width: 12rem;
+}
 
 @media screen and (min-height:900px){
     .trackBig{
@@ -401,18 +419,28 @@ svg {
 
 @media screen and (max-width: 500px) {
     .trackBig {
-        height: 150vh;
+        height: 190vh;
+    }
+    .trackBig hr{
+        margin-bottom: 5rem;
     }
 
     .playShow {
-/* margin-top: 3rem;
-margin-bottom: 1rem; */
+
         position: relative;
-        left: 0rem;
-        height: 13rem;
-        width: 85vw;
+
+        left: -1rem;
+        height: 16rem;
+        width: 90vw;
         border-radius: 2rem;
         background-color: transparent;
+    }
+    .playshowbox{
+        position: relative;
+        right: 2rem;
+        margin-top: 1.5rem;
+        /* margin-left: 3rem; */
+        width: 19rem;
     }
 
     .Trbox {
@@ -420,27 +448,32 @@ margin-bottom: 1rem; */
     }
 
     .playShow h6 {
+        width: 48rem;
         margin-left: 2rem;
-        font-size: 3.3rem;
+        font-size: 3.9rem;
     }
 
     .playShow .mainImg {
         margin-left: 4rem;
-        width: 9rem;
-        height: 9rem;
+        width: 12rem;
+        height: 12rem;
         border-radius: 0;
     }
     .artNm{
         margin-left: 2rem;
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
     .trackboxnm{
         font-size: 3.5rem;
     }
-    .playShow i{
-      margin-right: 1rem;
-        font-size: 3.5rem;
+    .trackplayerbox1{
+visibility: hidden;
     }
+    
+    .playShow i{
+        font-size: 4.5rem;
+    }
+  
     .relatedArtist {
         display: flex;
         /* justify-content: center; */
@@ -483,50 +516,61 @@ margin-bottom: 1rem; */
         margin-top: 10rem;
         display: block;
     }
+   
     .MusicContainer3 .cardcontainer {
-        width: 25rem;
+        width: 30rem;
     }
     .MusicContainer3  img{
-        width: 18rem;
-        height: 18rem;
+        width: 26rem;
+        height: 26rem;
+      
     }
     .MusicContainer3 .artistImg p {
-        font-size: 1.7rem;
+        font-size: 2.5rem;
     }
 .MusicContainer3 .scroll{
-    margin-left: -6rem;
+    margin-left: -3rem;
 }
     .trackContainer {
-        margin-top: 3rem;
-        height: 40rem;
+        width: 56vw;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        margin-top: 10rem;
+        margin: 10rem  8rem;
+        height: 80rem;
         margin-bottom: 15rem;
     }
 
     .trackContainer img {
-        margin-left: 8rem;
-        height: 40rem;
-        width: 36rem;
+        margin: 0;
+        left: 0;
+        height: 55vw;
+        width: 85rem;
     }
 
     .trackContainer .rightTr {
         position: relative;
         top: 10rem;
-        left: 19rem;
+        margin-bottom: 15rem;
+        left: 2rem;
 
     }
 
     .rightTr p {
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 
     .rightTr h1 {
-        font-size: 4.5rem;
+        box-sizing: border-box;
+        width: 90vw;
+        font-size: 6.4rem;
         
     }
 
     .trartist p {
         margin-top: 1rem;
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     .trackbtn button {
@@ -570,11 +614,13 @@ margin-bottom: 1rem; */
         height: 0rem;}
 
      .playerbox {
-        height: 11.5rem;
+        height: 18.5rem;
        
     }
     .playerSong {
-        font-size: 2.2rem;
+        margin: 0 3rem;
+        width: 43rem;
+        font-size: 4.2rem;
         font-weight: 400;
     }
     .playTiteName {
@@ -582,29 +628,40 @@ margin-bottom: 1rem; */
         width: 22rem;
     }
     .playerArtist {
-        font-size: 1.8rem;
+        width: 50rem;
+        margin-left: 3rem;
+        font-size: 2.1rem;
     }
     .playerImg img {
-        width: 9.2rem;
-        height: 9.2rem;
+        width: 12rem;
+        height: 12rem;
         margin: 0.5rem 2rem 0.5rem 1.5rem;
     }
     .playerImgBox { 
-        margin: 0;
+        /* margin: 0; */
+        position: relative;
+        left: 8rem;
     }
     .playerImgBox i{
-        font-size: 3rem;
+        font-size: 4rem;
         margin-right: 2rem;
+       
     }
     .timeval {
         position: relative;
-        left: -5rem;
+    
+        left: 5rem;
         font-size: 2rem;
+        margin-top: 0rem;
         
     }
     .timeval div{
-        font-size: 1.5rem;
-        margin:1rem ;
+        font-size: 2.3rem;
+        margin:0rem  1rem;
+        
+    }
+    .playerVoice{
+        display: none;
     }
     .playerVoice img{
         width: 3rem;
@@ -623,8 +680,8 @@ margin-bottom: 1rem; */
     }
     
 }
-@media screen and (max-width:355px){
-    .trackBig{
-        height: 100vh;
-    }
+@media screen and (max-width:400px){
+   .trackBig{
+    height: 130vh;
+   }
 }

@@ -889,7 +889,8 @@ align-items: center;
 
 @media screen and (max-width: 500px) {
     body {
-        background: linear-gradient(155.8deg, rgb(0, 0, 0) 0.1%, rgb(13, 10, 53) 15%, rgb(0, 0, 0) 40.1%, rgb(28, 9, 56) 55%, rgb(0, 0, 0) 80.1%);
+        /* background: linear-gradient(155.8deg, rgb(0, 0, 0) 0.1%, rgb(13, 10, 53) 15%, rgb(0, 0, 0) 40.1%, rgb(28, 9, 56) 55%, rgb(0, 0, 0) 80.1%); */
+        background: black;
     }
 
     .responsiveNav2 {
@@ -942,7 +943,7 @@ align-items: center;
         margin-right: 10rem;
         width: 100vw;
         border-radius: 0rem;
-        height: 70rem;
+        height: 65rem;
 
         /* margin-bottom: 3rem; */
     }
@@ -1058,11 +1059,14 @@ margin-right: 0rem;
     }
     
    .loginBox {
-        position: fixed;
-        top: 23rem;
-        left: 13rem;
-        height: 100rem;
-        width: 74rem;
+        
+      
+            position: fixed;
+            top: 30rem;
+            left: 8rem;
+            height: 135rem;
+            width: 85rem;
+        
     }
    
     .loginBox img {
@@ -1071,18 +1075,18 @@ margin-right: 0rem;
     }
 
     .signUpText {
-        margin-top: 7rem;
-        font-size: 5rem;
-        margin-left: 5rem;
-        margin-bottom: 10rem;
+        margin-top: 12rem;
+    font-size: 7rem;
+    margin-left: 10rem;
+    margin-bottom: 8rem;
     }
   
    
 
     .loginBox input {
-
-        width: 98%;
-        height: 10rem;
+        
+  
+        height: 14rem;
         background-color: transparent;
         outline: none;
         border: none;
@@ -1090,13 +1094,13 @@ margin-right: 0rem;
         border-radius: 1rem;
 
     }
-   .Signucontainer .loginBox hr {
+    .loginBox hr {
         position: relative;
-        left: 10rem;
-        bottom: 8rem;
-        margin-bottom: 58rem;
-        width: 55rem;
-        height: 7px;
+        top: 0rem ;
+            left: 6rem;
+            bottom: 8rem;
+            width: 59rem;
+            height: 13px;
 
 
 
@@ -1114,59 +1118,56 @@ margin-right: 0rem;
     }
 
     .Signucontainer .submitSet button {
-        font-size: 2.5rem;
-        text-align: center;
-        position: relative;
-
-        top: 12rem;
-        left: 25rem;
-        margin-bottom: 5rem;
-        width: 35%;
-        height: 5rem;
-
-        border: rgb(250, 170, 170) solid 1px;
-        border-radius: 3rem;
+        
+            font-size: 4rem;
+            text-align: center;
+            position: relative;
+            top: 12rem;
+            left: 28rem;
+            margin-bottom: 6rem;
+            width: 40%;
+            height: 7rem;
+            border: rgb(250, 170, 170) solid 1px;
+            border-radius: 6rem;
 
     }
     .Signucontainer2 .submitSet button {
-        font-size: 2.5rem;
-        text-align: center;
-        position: relative;
-
-        top: 12rem;
-        left: 25rem;
-        margin-bottom: 5rem;
-        width: 35%;
-        height: 5rem;
-
-        border: rgb(250, 170, 170) solid 1px;
-        border-radius: 3rem;
+        font-size: 4rem;
+    text-align: center;
+    position: relative;
+    top: 10rem;
+    left: 27rem;
+    margin-bottom: 5rem;
+    width: 43%;
+    height: 8rem;
+    border: rgb(250, 170, 170) solid 1px;
+    border-radius: 11rem;
 
     }
     .loginBox input{
-        width: 80%;
-        padding-left: 9rem;
-        font-size: 4rem;
+        width: 92%;
+    padding-left: 12rem;
+    font-size: 5rem;
     }
 
     .loginBox input::placeholder {
 padding-left: 0rem;
 padding-bottom: 0;
-        font-size: 3.2rem;
+        font-size: 4rem;
 
     }
 
     .crossIcon {
         top: 4rem;
-        left: 66rem;
-        font-size: 2.5rem;
+    left: 73rem;
+    font-size: 4.5rem;
     }
 
     .OptionLogin {
-        top: 15rem;
-        left: 20rem;
-        font-size: 2.2rem;
-        width: 50rem;
+        top: 22rem;
+        left: 13rem;
+        font-size: 3.2rem;
+        width: 67rem;
     }
 
     .customBtn button {
@@ -1181,7 +1182,7 @@ padding-bottom: 0;
         display: block;
     }
     .footerContainer{
-     margin-top: 4rem;
+     margin-top: 8rem;
         height: 10rem;
         padding-left: 6rem;
     }
