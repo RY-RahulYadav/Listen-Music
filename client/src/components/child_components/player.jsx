@@ -189,6 +189,7 @@ export default function player(props) {
 
 
   async function next_song(situation) {
+    
     let i;
     if (situation == 'next') {
       i = (index + 1) % playItem?.length
@@ -201,6 +202,7 @@ export default function player(props) {
     }
     if (playType == 'track') {
       setTrack(playItem)
+setisPlaying(true)
 
       updateAudioData(playItem?.preview_url)
     }
