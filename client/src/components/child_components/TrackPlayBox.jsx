@@ -200,7 +200,7 @@ setuser(res)
               <i  className=" trackplayerbox2 fa-solid fa-ellipsis fa-rotate-90 fa-xl  " data-bs-toggle="dropdown" aria-expanded="false" style={{  }}></i>
             <div className="dropdown">
               <ul className="dropdown-menu">
-                <li><a onClick={handleclick} className="dropdown-item" style={{cursor:"pointer"}}>Add to playlist</a></li>
+                <li><a onClick={handleclick} className="Addplaylistitem dropdown-item" style={{cursor:"pointer"}}>Add to playlist</a></li>
                 {props?.type=='playlist'&&<li onClick={SingleRemovesong}><a  className="dropdown-item" style={{cursor:"pointer"}}> Remove song </a></li>}
              
               </ul>

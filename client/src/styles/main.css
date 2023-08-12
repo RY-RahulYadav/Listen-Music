@@ -889,10 +889,17 @@ align-items: center;
 
 @media screen and (max-width: 500px) {
     body {
-        /* background: linear-gradient(155.8deg, rgb(0, 0, 0) 0.1%, rgb(13, 10, 53) 15%, rgb(0, 0, 0) 40.1%, rgb(28, 9, 56) 55%, rgb(0, 0, 0) 80.1%); */
-        background: black;
+        background: linear-gradient(155.8deg, rgb(0, 0, 0) 2%, rgb(13, 10, 53) 15%, rgb(0, 0, 0) 40.1%,  rgb(0, 0, 0) 80.1%);
+        /* background: black; */
     }
-
+    .Addplaylistitem{
+width: 25rem;
+height: 6rem;
+font-size: 3rem;
+padding-left: 2rem;
+font-weight: 600;
+    }
+    
     .responsiveNav2 {
         display: flex;
     }
