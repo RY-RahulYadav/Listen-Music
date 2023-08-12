@@ -238,12 +238,12 @@ export default function player(props) {
               <div className="playerArtist flex">{track?.album?.artists.map((item, index) => { if (index <= 1) { return <p>{item.name?.substring(0,10)}&nbsp;   </p> } })}</div>
             </div>
             <div className="playerImgBox flex">
-              <div className=" playerBackward" onClick={() => { next_song('previous') }}><i  className="fa-solid fa-backward-step fa-xl" style={{ color: "#ffffff", margin: " 0.8rem", cursor:'pointer' }}></i></div>
-              <div >{<i id="playerstate" onClick={handleclick} className={"fa-solid " + (isPlaying ? "fa-pause " : "fa-play ") + "  fa-xl  specialIcon"} style={{ color: "#ffffff", margin: " 0.8rem", cursor:'pointer' }} value={isPlaying}></i>}</div>
+              <div className=" playerBackward" onClick={() => { next_song('previous') }}><i  className="fa-solid fa-backward-step fa-xl" ></i></div>
+              <div >{<i id="playerstate" onClick={handleclick} className={"fa-solid " + (isPlaying ? "fa-pause " : "fa-play ") + "  fa-xl  specialIcon"} value={isPlaying}></i>}</div>
 
-              <div className="playerForward" onClick={() => { next_song('next') }}><i className="fa-sharp fa-solid fa-forward-step fa-xl" style={{ color: "#ffffff", margin: "0.8rem",cursor:'pointer' }}></i></div>
+              <div className="playerForward" onClick={() => { next_song('next') }}><i className="fa-sharp fa-solid fa-forward-step fa-xl" ></i></div>
             </div>
-            <div className="flex timeval">
+            <div className="flex timeval ">
               <div id='time1' value="">0:00 &nbsp; </div> /
               <div id='time2'>{totalduration != 'NaN:NaN' ? totalduration : "0:00"}</div>
             </div>

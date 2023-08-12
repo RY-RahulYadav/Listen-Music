@@ -403,7 +403,11 @@ svg {
 .playshowbox{
     width: 12rem;
 }
-
+.playerImgBox i{
+    color: #ffffff;
+    margin: 1rem;
+    cursor:pointer;
+}
 @media screen and (min-height:900px){
     .trackBig{
         height: 120vh;
@@ -640,14 +644,15 @@ visibility: hidden;
     .playerImgBox { 
         /* margin: 0; */
         position: relative;
-        left: 8rem;
+        left: 10rem;
     }
     .playerImgBox i{
-        font-size: 4rem;
-        margin-right: 2rem;
+        font-size: 6rem;
+        margin: 2.5rem;
        
     }
     .timeval {
+        display: none;
         position: relative;
     
         left: 5rem;
