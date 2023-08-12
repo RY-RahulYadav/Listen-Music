@@ -6,7 +6,7 @@
   ],
   "routes": [
       {
-        "src": "/api/(.*)",  // Match only API routes
+        "src": "/api/(.*)",  
         "dest": "/index.js"
          
       }
