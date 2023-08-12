@@ -189,8 +189,8 @@ setuser(res)
         <p className ="trackboxnm " style={{ margin: '1rem 0rem' }} > {props.index + 1}.</p>
         <div > <img className="mainImg" src={props.img} alt=".." /> </div>
         <div className="Trbox" >
-          <div> <h6 onClick={() => { GOtrack(); props.playFunc(props.item, props.type, 0) }} style={{cursor:"pointer"}} >{props.TrackName?.substring(0,23)}.</h6>
-            <div className="flex" style={{cursor:"pointer"}}>{props.dataArr && props.dataArr.map((item, index) => { if (index <2) { return (<p className="artNm" >{item.name.substring(0,12)} . &nbsp;&nbsp;</p>) } })} </div></div>
+          <div> <h6 onClick={() => { GOtrack(); props.playFunc(props.item, props.type, 0) }} style={{cursor:"pointer"}} >{props.TrackName?.substring(0,21)}.</h6>
+            <div className="flex" style={{cursor:"pointer"}}>{props.dataArr && props.dataArr.map((item, index) => { if (index <2) { return (<p className="artNm" >{item.name.substring(0,11)} . &nbsp;&nbsp;</p>) } })} </div></div>
           <div className="playshowbox" >
             <i onClick={() => { nextSong('previous') }} className=" trackplayerbox1 fa-solid fa-backward-step fa-xl " style={{  }}></i>
             <i onClick={(e)=>{(playstatus(e))} } id={props.data?.id}  className={ state ? "fa-pause trackplayerbox2 fa-solid  fa-xl trd " : "fa-play trackplayerbox2 fa-solid  fa-xl trd"} style={{  }} value="false"></i>

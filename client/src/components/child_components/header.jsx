@@ -143,10 +143,10 @@ function Notavailable(e){
          <div className="customContainerflex">
           <div className="imgtag"><img src="/logo.webp" alt="error" /></div>
           <h6 onClick={()=>{navigate('/')}} style={{color:'white' , margin:'1rem' , cursor:'pointer'}}>ListenMusic</h6> 
-          <i onClick={()=>{navigate('/search')}} className ="fa-solid fa-magnifying-glass" style={{color: '#ffffff' , position:'absolute',left:'78rem' , top:'9.3rem' , fontSize:'4.5rem'}}></i></div>
+          <i onClick={()=>{navigate('/search')}} className ="fa-solid fa-magnifying-glass" style={{color: '#ffffff' , position:'absolute',left:'78rem' , top:'8rem' , fontSize:'4rem'}}></i></div>
           
          
-          <div onClick={RopenNav}><i className="fa-solid fa-bars fa-xl" style={{color: "#ffffff"}}></i>
+          <div onClick={RopenNav}><i className="fa-solid fa-bars fa-xl" style={{color: "#ffffff" , fontSize:'4.5rem'}}></i>
           </div>
 </div>
 

@@ -441,10 +441,10 @@ svg {
     }
     .playshowbox{
         position: relative;
-        right: 2rem;
+        right: 4rem;
         margin-top: 1.5rem;
         /* margin-left: 3rem; */
-        width: 19rem;
+        width: 22rem;
     }
 
     .Trbox {
@@ -475,7 +475,7 @@ visibility: hidden;
     }
     
     .playShow i{
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
   
     .relatedArtist {
@@ -497,7 +497,7 @@ visibility: hidden;
     }
 
     .title {
-        font-size: 7rem;
+        font-size: 6.4rem;
         margin-top: 6rem;
         margin-left: 6rem;
 
@@ -687,6 +687,6 @@ visibility: hidden;
 }
 @media screen and (max-width:400px){
    .trackBig{
-    height: 130vh;
+    height: 150vh;
    }
 }
