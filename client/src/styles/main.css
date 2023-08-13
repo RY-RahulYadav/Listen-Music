@@ -119,6 +119,7 @@ html {
 }
 
 
+
 .carousel-inner {
     display: flex;
     transition: all 5s;
@@ -950,7 +951,7 @@ font-weight: 600;
         margin-right: 10rem;
         width: 100vw;
         border-radius: 0rem;
-        height: 65rem;
+        height: 63rem;
 
         /* margin-bottom: 3rem; */
     }
@@ -1001,18 +1002,18 @@ font-weight: 600;
 }
     .scroll {
         width: 90rem;
-        height: 49rem;
+        height: 55rem;
         display: flex;
         margin: 2rem;
         margin-left: 4rem;
-        margin-top: 4rem;
+        margin-top: 8rem;
         margin-bottom: 1rem;
 
     }
 
     .cardcontainer {
         width: 40rem;
-        height: 48rem;
+        height: 55rem;
     }
 
     .artistImg {
@@ -1029,7 +1030,7 @@ margin-right: 0rem;
         text-align: center;
         color: aliceblue;
         width: 34rem;
-        height: 45rem;
+        height: 55rem;
 
     }
 
@@ -1041,8 +1042,8 @@ margin-right: 0rem;
         align-self: center;
         border-radius: 2rem;
 
-        width: 30rem;
-        height: 30rem;
+        width: 32rem;
+        height: 35rem;
 
     }
 
@@ -1052,7 +1053,7 @@ margin-right: 0rem;
         width: 28rem;
         margin-top: 2.5rem;
         margin-left: 1.5rem;
-        font-size: 3rem;
+        font-size: 3.2rem;
     }
 
     .hr1 {
@@ -1201,7 +1202,7 @@ padding-bottom: 0;
 .customContainerInside{
     margin-right: 6.8rem;
     margin-top:2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1381,7 +1382,7 @@ height: 5rem;
 
 }
 .navimg{
-    margin-top:  5rem;
+    margin-top:  4rem;
     margin-left: 4rem;
     width: 5rem;
  height: 5rem;
@@ -1420,19 +1421,18 @@ height: 5rem;
         margin: 0;
     }
     .navImg {
-        margin-top: 5rem;
-        margin-bottom :2rem;
+        margin-top: 1rem;
+        margin-bottom :5rem;
         margin-left: 12rem;
+        bottom: 10rem;
 
     }
     .navImg img {
         margin-top: 0;
-width: 6rem;
-height: 6rem;
+width: 6.5rem;
+height: 6.5rem;
     }
-    .navImg{
-        bottom: 10rem;
-    }
+    
 
 
 }

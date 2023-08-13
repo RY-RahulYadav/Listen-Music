@@ -152,7 +152,7 @@ function Notavailable(e){
 
 
 </div>
-
+   
  {opennav&&<div className="CustomizeNav largescreenHide">
  <div className="loginCn">
   <div className="imgtag"><img src="/logo.webp" alt="error" /></div>
@@ -173,7 +173,7 @@ function Notavailable(e){
   <li><i className=" fa-solid fa-magnifying-glass " style={{color: '#ffffff'  , position:'relative', top:"0rem" , left:'-5rem', fontSize:'4rem' ,marginRight:'2rem'}}></i>  <Link to='/search'> Search </Link></li>
   <li  ><i className ="fa-solid fa-table-list commonabcIcon2" style={{color: "#ffffff"}}></i> <a href="#" onClick={async (e)=>{await playlistclick(e) ; 
     }}> Playlist</a></li>
-  <li onClick={()=>{ handlelogout()}}> <i className="fa-solid fa-bolt  commonabcIcon2" style={{color: "#ffffff"}}></i><Link>Logout</Link></li>
+  {LoginStatus&&<li onClick={()=>{ handlelogout()}}> <i className="fa-solid fa-bolt  commonabcIcon2" style={{color: "#ffffff"}}></i><Link>Logout</Link></li>}
 
  </div>
  

@@ -1,14 +1,14 @@
 import { createContext, useContext, useEffect, useState } from "react"
 import { Outlet } from "react-router-dom";
 
-
+import { useNavigate } from "react-router-dom";
 import { brow } from "./all";
 import { PlayerFuction, isPlayingState} from "./all_player_function";
 
 
 
 export default function player(props) {
-
+  const navigate = useNavigate();
   const Refindex = props.playIndex
   const playItem = props.item
   const playType = props.playType
@@ -185,7 +185,15 @@ export default function player(props) {
 
   }
 
+function handlego_track(){
+  if(track){
+  const path = '/track/' + track?.id;
+  navigate(path, { state: { item: track } });}
+  else{
+    return;
+  }
 
+}
 
 
   async function next_song(situation) {
@@ -234,11 +242,11 @@ setisPlaying(true)
           <audio onEnded={() => { next_song('next') }} id="newaudio" className="audionew" onTimeUpdate={TimeUpdated} src={track?.preview_url} > </audio>
           <input id='progress' type="range" min="0" max="100" />
         </div>
-        <div className="playerbox">
+        <div  className="playerbox">
           <div className="playerImg"><img src={track?.album?.images[0].url} alt=".." /></div>
           <div className="playerEqual">
             <div className="playTiteName ">
-              <div className="playerSong">{track?.name?.substring(0,19)} </div>
+              <div onClick={handlego_track} className="playerSong">{track?.name?.substring(0,19)} </div>
               <div className="playerArtist flex">{track?.album?.artists.map((item, index) => { if (index <= 1) { return <p>{item.name?.substring(0,10)}&nbsp;   </p> } })}</div>
             </div>
             <div className="playerImgBox flex">

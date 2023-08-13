@@ -85,7 +85,7 @@ function HomeDisplay() {
         })}
       </div>
     <div>
-      <div className='title'> Top Artists <hr className="hr1 responsiveNav" /></div>
+      <div className='arCardRot title'> Top Artists <hr className="hr1 responsiveNav" /></div>
       <div className="flex scroll">
 
         {artists.artists?.items.map((item,index) => {
