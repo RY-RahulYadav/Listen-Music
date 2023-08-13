@@ -36,17 +36,24 @@ Router.post("/register",  (req, res)=> {
       
     });
     
-Router.post("/login" , (req , res )=>{
-  
-  
-    passport.authenticate("local" )(req,res, async (err)=>{
-     
-     
-      const userData=  await  User.findOne({username:req.body.username}).select('-password').exec()
-      res.status(200).json(userData)
-    })
-  }
- )
+    Router.post('/login', (req, res, next) => {
+      passport.authenticate('local', (err, user, info) => {
+        if (err) {
+          console.error('Authentication error:', err);
+          return res.status(500).json({ message: 'Internal server error' });
+        }
+        if (!user) {
+          return res.status(401).json({ message: 'Authentication failed' });
+        }
+        req.login(user, (loginErr) => {
+          if (loginErr) {
+            console.error('Login error:', loginErr);
+            return res.status(500).json({ message: 'Internal server error' });
+          }
+          res.status(200).json({ message: 'Authentication successful' });
+        });
+      })(req, res, next);
+    });
 
 Router.get("/logout", function(req, res){
   

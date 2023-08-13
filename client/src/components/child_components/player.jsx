@@ -188,7 +188,29 @@ export default function player(props) {
 function handlego_track(){
   if(track){
   const path = '/track/' + track?.id;
-  navigate(path, { state: { item: track } });}
+  navigate(path, { state: { item: track } });
+  const element = document.getElementById(songid);
+  
+  if (isPlaying) {
+  
+    element.classList.remove("fa-pause")
+    element.classList.add("fa-play")
+    
+    
+
+  }
+  else {
+    
+    
+    element.classList.remove('fa-play')
+    element.classList.add('fa-pause')
+  }
+  
+
+
+
+
+}
   else{
     return;
   }

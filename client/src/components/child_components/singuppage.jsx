@@ -103,12 +103,18 @@ function SignUp(props){
     async function handlesubmit(event) {
 
         event.preventDefault()
-        if(details?.username.length<10||details?.password.length<8){
-           alert("username and password must be only 8 charchaters plz sign up again ");
-           return;
-       
+        if(details?.name==""||details?.email==""){
+            alert("plz fill the all required details");
+            return;
+        }
 
-
+        if(details?.username.length<4){
+            alert("username is too short , plz enter minimum 4 character")
+            return;
+          }
+        if(details?.password.length<8){
+           alert(" password must be  8 charchaters plz sign up again ");
+         return;
         }
 
         const res = await fetch(`${ApiUrl}/api/auth/register`, {
