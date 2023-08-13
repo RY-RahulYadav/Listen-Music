@@ -43,7 +43,7 @@ function card(props) {
       <div onClick={handleclick} className=" artistImg" value={props.itemData.id} >
         <img src={props.imgUrl} className="card-img-top " alt="..." />
         <div className="card-body" >
-          <p className="card-text cardText" >{props.name} </p>
+          <p className="card-text cardText" >{props.name.substring(0,30)} </p>
         </div>
       </div>
     </div>)
