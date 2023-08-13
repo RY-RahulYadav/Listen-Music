@@ -1001,7 +1001,7 @@ font-weight: 600;
     font-size: 3rem;
 }
     .scroll {
-        width: 90rem;
+        width: 96rem;
         height: 55rem;
         display: flex;
         margin: 2rem;
@@ -1025,7 +1025,7 @@ font-weight: 600;
         border: none;
         border-radius: 0.5rem;
         margin: 8px;
-margin-right: 0rem;
+margin-right: 1rem;
 
         text-align: center;
         color: aliceblue;
