@@ -283,7 +283,7 @@ setisPlaying(true)
             </div>
             <div>
               <div className="flex playerVoice">
-                <img src="..\..\..\public\play\icons8-voice-50.png" alt="" />
+                <img src="\play\icons8-voice-50.png" alt="" />
                 <input id="volume" type="range" onChange={volumeChange} min={"0"} max={'100'} /></div>
             </div></div>
 
