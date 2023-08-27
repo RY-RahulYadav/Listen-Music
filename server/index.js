@@ -22,6 +22,7 @@ app.use(cors({
 app.use(bodyParser.urlencoded({extended:true}))
 
 // session and passport initialize 
+app.set('trust proxy', 1)
 app.use(session({
     
     secret: 'keyboard cat',
@@ -29,7 +30,7 @@ app.use(session({
     saveUninitialized: true,
     httpOnly: true,
     cookie: { 
-        domain: '.vercel.app',sameSite: 'none',    secure:true
+      sameSite: 'none',    secure:true
 }
 }))
 
