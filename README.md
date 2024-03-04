@@ -35,12 +35,6 @@ Go to the project directory
   cd my-project
 ```
 
-Install dependencies
-
-```bash
-  npm install
-```
-
 Start the client-side
 
 ```bash
